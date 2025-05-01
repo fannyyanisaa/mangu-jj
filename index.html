@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 💿 Vinyl -->
+  <div class="vinyl-container">
+    <div class="vinyl-background" id="vinyl"></div>
+  </div>
+
+  <!-- 🎶 Music Card -->
+  <div class="music-card">
+    <h2 class="title">Mangu</h2>
+    <p class="artist">Fortwnty</p>
+
+    <div class="progress-container">
+      <span class="time" id="currentTime">0:00</span>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span class="time" id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button class="icon heart-btn" onclick="showHearts()">♡</button>
+      <button class="play-btn" onclick="togglePlay()">▶️</button>
+      <button class="icon">🎵</button>
+    </div>
+
+    <div class="lyrics" id="lyrics"></div>
+
+    <audio id="audio" src="song.mp3"></audio>
+    <div id="heart-container"></div>
+  </div>
+
+  <!-- 🎉 GIF Dance Overlay -->
+  <div id="dance-overlay" class="hidden">
+    <img src="dance.gif" alt="Dancing GIF" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
